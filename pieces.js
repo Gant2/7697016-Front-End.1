@@ -67,10 +67,10 @@ boutonDescrip.addEventListener("click", function () {
 
 const boutonDecroi = document.querySelector(".btn-decroi");
 
-boutonDecroi.addEventListener("click  ", function () {
-    const piecesDesordonnes = Array.from(pieces);
-    piecesDesordonnes.sort(function (a, b ){
+boutonDecroi.addEventListener("click", function () {
+    const piecesOrdonnes = Array.from(pieces);
+    piecesOrdonnes.sort(function (a, b){
         return b.prix - a.prix;
     });
-    console.log(piecesDesordonnes);
+    console.log(piecesOrdonnes);
 });
