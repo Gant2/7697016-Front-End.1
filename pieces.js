@@ -53,6 +53,24 @@ boutonFiltrer.addEventListener("click", function () {
     const piecesFiltrees = pieces.filter(function (piece) {
         return piece.prix <= 35;
     });
-   console.log(piecesFiltrees)
+   console.log(piecesFiltrees) 
 });
 
+const boutonDescrip = document.querySelector(".btn-descrip");
+
+boutonDescrip.addEventListener("click", function () {
+    const piecesDescrip = pieces.filter(function (piece) {
+        return piece.description ;
+        });
+        console.log(piecesDescrip)
+});
+
+const boutonDecroi = document.querySelector(".btn-decroi");
+
+boutonDecroi.addEventListener("click  ", function () {
+    const piecesDesordonnes = Array.from(pieces);
+    piecesDesordonnes.sort(function (a, b ){
+        return b.prix - a.prix;
+    });
+    console.log(piecesDesordonnes);
+});
