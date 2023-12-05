@@ -106,9 +106,8 @@ const disponibleElement = document.createElement('ul');
 
 for(let i=0; i < nomDisponible.length; i++) {
     const nomElement = document.createElement('li');
-    nomElement.innerText = `${nomDisponible[i]} - ${prixDisponible[i]} €`
+    nomElement.innerText = `${nomDisponible[i]} - ${prixDisponible[i]} €`;
     disponibleElement.appendChild(nomElement);
 }
 
-document.querySelectorAll('.disponibles')
-    .appendChild(disponibleElement)
+document.querySelector('.disponibles').appendChild(disponibleElement);
